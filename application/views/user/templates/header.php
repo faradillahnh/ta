@@ -41,17 +41,15 @@
 									<div class="megamenu mega02">
 										<ul class="item item02">
 											<li class="title">Obat-obatan</li>
-											<li><a href="produk.html">Ibu dan Anak</a></li>
-											<li><a href="produk.html">Suplemen</a></li>
-											<li><a href="produk.html">Perawatan Tubuh</a></li>
-											<li><a href="produk.html">Herbal</a></li>
-											<li><a href="produk.html">Kesehatan Pria</a></li>
-											<li><a href="produk.html">Kesehatan Wanita</a></li>
+											<?php	foreach ($all_kategori as $show): ?>
+												<li><a href="produk.html"><?= $show->nama_kategori;?></a></li>
+											<?php endforeach; ?>
 										</ul>
 										<ul class="item item02">
 											<li class="title">Alat Kesehatan</li>
-											<li><a href="produk.html">Untuk Rumah</a></li>
-											<li><a href="produk.html">Untuk Dokter</a></li>
+											<?php	foreach ($all_alat as $show): ?>
+												<li><a href="produk.html"><?= $show->nama_kategori;?></a></li>
+											<?php endforeach; ?>
 										</ul>
 									</div>
 								</li>
