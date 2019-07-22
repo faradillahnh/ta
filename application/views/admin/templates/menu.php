@@ -23,13 +23,13 @@
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-book fa-lg"></i><span> Pesanan Obat</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="daftar_pesanan_obat_masuk.php">Pesanan Obat Masuk</a></li>
+						<li><a href="<?= base_url('index.php/PesananObat/daftarPesananObat');?>">Pesanan Obat Masuk</a></li>
 					</ul>
 				</li>
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-book fa-lg"></i><span> Pesanan Resep</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="#">Resep Diajukan</a></li>
+						<li><a href="<?= base_url('index.php/Resep/daftarResep');?>">Resep Diajukan</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -46,8 +46,8 @@
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-database fa-lg"></i><span> Alat Kesehatan</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="#">Daftar Alat Kesehatan</a></li>
-						<li><a href="#">Tambah Alat Kesehatan</a></li>
+						<li><a href="<?= base_url('index.php/');?>">Daftar Alat Kesehatan</a></li>
+						<li><a href="<?= base_url('index.php/');?>">Tambah Alat Kesehatan</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -56,8 +56,8 @@
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-building fa-lg"></i><span> Cabang</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="#">Daftar Cabang</a></li>
-						<li><a href="#">Tambah Cabang</a></li>
+						<li><a href="<?= base_url('index.php/Cabang/daftarCabang');?>">Daftar Cabang</a></li>
+						<li><a href="<?= base_url('index.php/Cabang/tambahCabang');?>">Tambah Cabang</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -73,8 +73,8 @@
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-users fa-lg"></i><span> Karyawan</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="#">Daftar Karyawan</a></li>
-						<li><a href="#">Tambah Karyawan</a></li>
+						<li><a href="<?= base_url('index.php/Karyawan/daftarKaryawan');?>">Daftar Karyawan</a></li>
+						<li><a href="<?= base_url('index.php/Karyawan/tambahKaryawan');?>">Tambah Karyawan</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -83,20 +83,20 @@
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="fa fa-money fa-lg"></i><span> Tarif Pengiriman</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="#">Daftar Tarif Pengiriman</a></li>
-						<li><a href="#">Tambah Tarif Pengiriman</a></li>
+						<li><a href="<?= base_url('index.php/TarifPengiriman/daftarTarifPengiriman');?>">Daftar Tarif Pengiriman</a></li>
+						<li><a href="<?= base_url('index.php/TarifPengiriman/tambahTarifPengiriman');?>">Tambah Tarif Pengiriman</a></li>
 					</ul>
 				</li>
 			</ul>
 			<h5 class="title">Manajemen Konten Blog</h5>
 				<ul class="menu js__accordion">
-					<li><a href="#">Daftar Konten Blog</a></li>
-					<li><a href="#">Tambah Konten Blog</a></li>
+					<li><a href="<?= base_url('index.php/Blog/daftarKontenBlog');?>">Daftar Konten Blog</a></li>
+					<li><a href="<?= base_url('index.php/Blog/tambahKontenBlog');?>">Tambah Konten Blog</a></li>
 				</ul>
       <h5 class="title">Manajemen Laporan</h5>
 			<ul class="menu js__accordion">
-				<li><a href="#">Laporan Penjualan Obat</a></li>
-				<li><a href="#">Laporan Stok Barang</a></li>
+				<li><a href="<?= base_url('index.php/');?>">Laporan Penjualan Obat</a></li>
+				<li><a href="<?= base_url('index.php/');?>">Laporan Stok Barang</a></li>
 			</ul>
 		</div>
 	</div>

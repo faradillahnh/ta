@@ -367,12 +367,14 @@
 				<div class="row mt--50">
 					<div class="col-md-12 col-lg-12 col-sm-12">
 						<div class="product__nav nav justify-content-center" role="tablist">
-                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-all" role="tab">ALL</a>
-                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-biographic" role="tab">BIOGRAPHIC</a>
-                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-adventure" role="tab">ADVENTURE</a>
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-all" role="tab">Semua Kategori</a>
+														<?php	foreach ($all_kategori as $show): ?>
+														<a class="nav-item nav-link" data-toggle="tab" href="#nav-biographic" role="tab"><?= $show->nama_kategori;?></a>
+													<?php endforeach; ?>
+                            <!-- <a class="nav-item nav-link" data-toggle="tab" href="#nav-adventure" role="tab">ADVENTURE</a>
                             <a class="nav-item nav-link" data-toggle="tab" href="#nav-children" role="tab">CHILDREN</a>
-                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-cook" role="tab">COOK</a>
-                        </div>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-cook" role="tab">COOK</a> -->
+												</div>
 					</div>
 				</div>
 				<div class="tab__container mt--60">
@@ -2404,57 +2406,19 @@
 					</div>
 				</div>
 				<div class="row mt--50">
+					<?php foreach ($data_blog as $show) : ?>
 					<div class="col-md-6 col-lg-4 col-sm-12">
 						<div class="post__itam">
 							<div class="content">
-								<h3><a href="blog-details.html">International activities of the Frankfurt Book </a></h3>
-								<p>We are proud to announce the very first the edition of the frankfurt news.We are proud to announce the very first of  edition of the fault frankfurt news for us.</p>
+								<h3><a href="blog-details.html"><?= $show->judul_blog_konten; ?></a></h3>
+								<p><?= $show->konten; ?></p>
 								<div class="post__time">
-									<span class="day">Dec 06, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
+									<span class="day"><?= $show->created_at; ?></span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4 col-sm-12">
-						<div class="post__itam">
-							<div class="content">
-								<h3><a href="blog-details.html">Reading has a signficant info  number of benefits</a></h3>
-								<p>Find all the information you need to ensure your experience.Find all the information you need to ensure your experience . Find all the information you of.</p>
-								<div class="post__time">
-									<span class="day">Mar 08, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-sm-12">
-						<div class="post__itam">
-							<div class="content">
-								<h3><a href="blog-details.html">The London Book Fair is to be packed with exciting </a></h3>
-								<p>The London Book Fair is the global area inon marketplace for rights negotiation.The year  London Book Fair is the global area inon forg marketplace for rights.</p>
-								<div class="post__time">
-									<span class="day">Nov 11, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<?php endforeach; ?>
 				</div>
 			</div>
 		</section>

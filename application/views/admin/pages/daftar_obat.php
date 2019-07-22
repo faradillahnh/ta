@@ -5,7 +5,7 @@
       <div class="col-lg-12 col-md-12 col-xs-12">
         <div class="box-content bg-white">
 			    <h1>Daftar Obat</h1>
-			    <a href="<?= base_url('index.php/Pelanggan/tambahObat'); ?>" class="btn btn-success btn-xs"><i class="fa fa-plus"></i> Tambah Obat</a>
+			    <a href="<?= base_url('index.php/Obat/tambahObat'); ?>" class="btn btn-success btn-xs"><i class="fa fa-plus"></i> Tambah Obat</a>
 <hr>
 					<table class="table table-hover">
 			      <thead>
