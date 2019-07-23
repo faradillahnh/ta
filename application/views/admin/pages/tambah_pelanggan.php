@@ -41,6 +41,10 @@
 								<label for="inputEmail">Email</label>
 								<input type="text" class="form-control" name="inputEmail" placeholder="Masukkan Email">
 							</div>
+							<div class="form-group col-md-12">
+								<label for="inputEmail">Alamat</label>
+								<input type="text" class="form-control" name="inputAlamat" placeholder="Masukkan Email">
+							</div>
               <div class="form-group col-md-6">
                 <label for="">Password</label>
                 <input type="password" class="form-control" name="inputPassword" placeholder="Password">

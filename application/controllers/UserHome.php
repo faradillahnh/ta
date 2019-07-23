@@ -7,6 +7,7 @@ class UserHome extends CI_Controller {
         parent::__construct();
         $this->load->model('KategoriModel');
 				$this->load->model('BlogModel');
+				$this->load->model('ObatModel');
     }
 
 	public function index()
@@ -15,6 +16,7 @@ class UserHome extends CI_Controller {
 		$data['all_kategori'] = $this->KategoriModel->getAllKategoriObat();
 		$data['all_alat'] = $this->KategoriModel->getAllKategoriAlat();
 		$data['data_blog']=$this->BlogModel->getAllBlog();
+		$data['data_obat']=$this->ObatModel->getAllObat();
 
 		// view
 		$this->load->view('user/templates/header', $data);

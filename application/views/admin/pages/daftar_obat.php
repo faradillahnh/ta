@@ -10,7 +10,7 @@
 					<table class="table table-hover">
 			      <thead>
 			        <tr>
-			          <th scope="col">No</th>
+			          <th scope="col">Kode Obat</th>
 			          <th scope="col">Nama Obat</th>
 			          <th scope="col">On Hand </th>
 			          <th scope="col">HJA</th>

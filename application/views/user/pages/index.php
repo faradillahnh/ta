@@ -69,20 +69,21 @@
 				<!-- Start Single Tab Content -->
 				<div class="furniture--4 border--round arrows_style owl-carousel owl-theme row mt--50">
 					<!-- Start Single Product -->
+					<?php foreach ($data_obat as $show) :?>
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
+								<a class="first__img" href="detail.html"><img src="<?= $show->photo;?>" alt="product image"></a>
+								<a class="second__img animation1" href="detail.html"><img src="<?= $show->photo;?>" alt="product image"></a>
 								<div class="hot__box">
 									<span class="hot-label">BEST SALLER</span>
 								</div>
 							</div>
 							<div class="product__content content--center">
-								<h4><a href="detail.html">robin parrish</a></h4>
+								<h4><a href="detail.html"><?= $show->nama_obat;?>"</a></h4>
 								<ul class="prize d-flex">
-									<li>$35.00</li>
-									<li class="old_prize">$35.00</li>
+									<li><?= $show->hja;?>"</li>
+									<li class="old_prize"><?= $show->photo;?></li>
 								</ul>
 								<div class="action">
 									<div class="actions_inner">
@@ -107,200 +108,7 @@
 						</div>
 					</div>
 					<!-- Start Single Product -->
-					<!-- Start Single Product -->
-					<div class="product product__style--3">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<div class="hot__box color--2">
-									<span class="hot-label">HOT</span>
-								</div>
-							</div>
-							<div class="product__content content--center">
-								<h4><a href="detail.html">The Remainng</a></h4>
-								<ul class="prize d-flex">
-									<li>$35.00</li>
-									<li class="old_prize">$35.00</li>
-								</ul>
-								<div class="action">
-									<div class="actions_inner">
-										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product__hover--content">
-									<ul class="rating d-flex">
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Start Single Product -->
-					<!-- Start Single Product -->
-					<div class="product product__style--3">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<div class="hot__box">
-									<span class="hot-label">BEST SALLER</span>
-								</div>
-							</div>
-							<div class="product__content content--center">
-								<h4><a href="detail.html">Bowen Greenwood</a></h4>
-								<ul class="prize d-flex">
-									<li>$40.00</li>
-									<li class="old_prize">$35.00</li>
-								</ul>
-								<div class="action">
-									<div class="actions_inner">
-										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product__hover--content">
-									<ul class="rating d-flex">
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Start Single Product -->
-					<!-- Start Single Product -->
-					<div class="product product__style--3">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<div class="hot__box">
-									<span class="hot-label">HOT</span>
-								</div>
-							</div>
-							<div class="product__content content--center">
-								<h4><a href="detail.html">Lando</a></h4>
-								<ul class="prize d-flex">
-									<li>$35.00</li>
-									<li class="old_prize">$50.00</li>
-								</ul>
-								<div class="action">
-									<div class="actions_inner">
-										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product__hover--content">
-									<ul class="rating d-flex">
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Start Single Product -->
-					<!-- Start Single Product -->
-					<div class="product product__style--3">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<div class="hot__box">
-									<span class="hot-label">HOT</span>
-								</div>
-							</div>
-							<div class="product__content content--center">
-								<h4><a href="detail.html">Doctor Wldo</a></h4>
-								<ul class="prize d-flex">
-									<li>$35.00</li>
-									<li class="old_prize">$35.00</li>
-								</ul>
-								<div class="action">
-									<div class="actions_inner">
-										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product__hover--content">
-									<ul class="rating d-flex">
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Start Single Product -->
-					<!-- Start Single Product -->
-					<div class="product product__style--3">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="product__thumb">
-								<a class="first__img" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<a class="second__img animation1" href="detail.html"><img src="<?= base_url('assets/user/images/product/batuk.png');?>" alt="product image"></a>
-								<div class="hot__box">
-									<span class="hot-label">BEST SALER</span>
-								</div>
-							</div>
-							<div class="product__content content--center content--center">
-								<h4><a href="detail.html">Ghost</a></h4>
-								<ul class="prize d-flex">
-									<li>$50.00</li>
-									<li class="old_prize">$35.00</li>
-								</ul>
-								<div class="action">
-									<div class="actions_inner">
-										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product__hover--content">
-									<ul class="rating d-flex">
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li class="on"><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-										<li><i class="fa fa-star-o"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+				<?php endforeach; ?>
 				</div>
 			</div>
 		</section>

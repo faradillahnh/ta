@@ -59,7 +59,7 @@ class Pelanggan extends CI_Controller {
 		$alamat = $this->input->post('inputAlamat');
 		$email = $this->input->post('inputEmail');
 		$password = $this->input->post('inputPassword');
-		$alamat = $this->input->post('inputJalan');
+		$alamat = $this->input->post('inputAlamat');
 		$photo = "upload_path".'/'."file_name";
 
 		$data = array(

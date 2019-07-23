@@ -6,7 +6,7 @@
           <h1>Tambah Produk Obat</h1>
 			    <a href="<?= base_url('index.php/Obat/daftarObat'); ?>" class="btn btn-success btn-xs"><i class="fa fa-chevron-left"></i> Kembali</a>
           <hr>
-          <form action="<?= base_url('index.php/Obat/prosesTambahObat'); ?>" method="post" enctype='multipart/form-data'>
+          <form enctype="multipart/form-data" action="<?= base_url('index.php/Obat/prosesTambahObat'); ?>" method="post">
             <div class="form-row">
 							<div class="form-group col-md-12">
                 <label for="inputNama">Kode Obat</label>
@@ -59,7 +59,7 @@
             <div class="form-row">
 							<div class="form-group col-md-12">
 	              <label for="exampleFormControlFile1">File Photo Profil</label>
-	              <input type="file" class="form-control-file" name="inputPhoto" id="exampleFormControlFile1">
+	              <input type="file" class="form-control-file" name="inputPhoto" value="<?= set_value('inputPhoto')?>" id="exampleFormControlFile1">
 	            </div>
             </div>
             <div class="form-group col-md-12">
